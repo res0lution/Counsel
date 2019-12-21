@@ -1,0 +1,18 @@
+@import '../../sass/vars';
+
+.offer-block {
+  background: $color-primary;
+}
+
+.offer-title {
+  font-size: $font-subtitle-size;
+  font-weight: 400;
+  line-height: $title-slide-size;
+}
+
+#btn-offer {
+  border-color: none;
+  background: $color-secondary;
+  color: $color-primary;
+  font-size: $contact-link-size;
+}

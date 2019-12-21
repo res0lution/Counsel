@@ -1,0 +1,38 @@
+@import '../../sass/vars';
+
+.info-block {
+  background: white;
+}
+
+.info-title {
+  @extend %section-title;
+  width: 450px;
+}
+
+.info-subtitle {
+  @extend %section-subtitle;
+}
+
+.info-text {
+  color: $color-text;
+}
+
+.contact-link {
+  @extend %contact-link;
+}
+
+.info-wrapper::after {
+  background: $color-secondary;
+  content: '';
+  height: 543px;
+  position: absolute;
+  right: 21em;
+  top: 0;
+  width: 270px;
+  z-index: 10;
+}
+
+.info-img {
+  z-index: 100;
+}
+

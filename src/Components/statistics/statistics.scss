@@ -1,0 +1,16 @@
+@import '../../sass/vars';
+
+.statistics-block {
+  background: $color-primary;
+}
+
+.table-value-row {
+  font-size: $font-table-value;
+  letter-spacing: .55rem;
+}
+
+.table-name-row {
+  font-family: $font-secondary;
+  font-size: $font-nav-link;
+  letter-spacing: .2rem;
+}

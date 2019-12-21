@@ -1,0 +1,35 @@
+$color-primary: #002e5b;
+$color-primary-rgba: rgba(0, 46, 91, .6);
+$color-secondary: #fde428;
+$color-text: #333333;
+
+$font-primary: 'Monserrat', sans-serif;
+$font-secondary: 'Segoe UI Emoji', sans-serif;
+
+$title-slide-size: 3.19rem;
+$font-small: 0.75rem;
+$font-nav-link: 0.88rem;
+$font-section-title: 1.94rem;
+$contact-link-size: 1rem;
+$font-subtitle-size: 1.31rem;
+$font-primary-height: 1.56rem;
+$font-table-value: 3rem;
+
+%section-title {
+  color: $color-primary;
+  font-size: $font-section-title;
+  line-height: $font-section-title;
+}
+
+%section-subtitle {
+  font-family: $font-secondary;
+  font-size: $font-subtitle-size;
+  line-height: $font-primary-height;
+}
+
+%contact-link {
+  color: $color-primary;
+  font-size: $contact-link-size;
+  line-height: $font-primary-height;
+  text-decoration: underline;
+}

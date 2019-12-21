@@ -1,0 +1,34 @@
+@import '../../sass/vars';
+
+.header-wrapper {
+  background: $color-primary-rgba;
+  z-index: 100000;
+}
+
+.header-block {
+  z-index: 100000;
+}
+
+.text-second-theme {
+  color: $color-secondary;
+}
+
+.text-logo {
+  font-size: 2.82rem;
+}
+
+.text-logo-small {
+  font-family: $font-primary;
+  font-size: $font-small;
+  letter-spacing: .25rem;
+}
+
+.nav-link {
+  font-family: $font-primary;
+  font-size: $font-nav-link;
+  line-height: $title-slide-size;
+}
+
+.dropdown-toggle::after {
+  color: white;
+}

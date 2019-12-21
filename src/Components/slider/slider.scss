@@ -1,0 +1,64 @@
+@import '../../sass/vars';
+
+.slider-block {
+  background: $color-primary-rgba;
+  top: 111px;
+}
+
+.carousel-item {
+  min-height: 790px;
+}
+
+.slide-content {
+  bottom: 170px;
+}
+
+.slide-title {
+  font-size: $title-slide-size;
+  line-height: $title-slide-size;
+  margin-bottom: .85em;
+}
+
+.slide-link {
+  color: $color-secondary;
+  font-family: $font-primary;
+  font-size: $font-subtitle-size;
+  text-decoration: underline;
+}
+
+.first-slide::after {
+  background: url('../../images/square.png') no-repeat center center;
+  content: '';
+  height: 380px;
+  left: 3.15em;
+  position: absolute;
+  top: -1.5em;
+  width: 300px;
+}
+
+.carousel-control-next {
+  left: 10em;
+}
+
+#next,
+#prev {
+  color: $color-secondary;
+}
+
+.carousel-control-next::before {
+  color: $color-secondary;
+  content: 'next';
+  font-size: $font-small;
+  left: 3.2em;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.carousel-control-prev::after {
+  color: $color-secondary;
+  content: 'previous';
+  font-size: $font-small;
+  position: absolute;
+  right: 1.2em;
+  text-transform: uppercase;
+}
