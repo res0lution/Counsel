@@ -1,0 +1,29 @@
+@import '../../sass/vars';
+
+.sk-rotating-plane {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: $color-secondary;
+  animation: sk-rotating-plane 1.2s infinite ease-in-out;
+  right: 300px;
+  top: 200px;
+}
+  
+@keyframes sk-rotating-plane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+@media(max-width:992px) {
+  .sk-rotating-plane {
+    display: none;
+  }
+}

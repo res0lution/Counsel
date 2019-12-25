@@ -5,7 +5,7 @@ import './info-block.scss';
 
 class InfoBlock extends React.Component {
   render() {
-    return <section>
+    return <section id='about'>
       <div className="container-fluid info-block pt-5 pb-5">
         <InfoWithImg />
       </div>

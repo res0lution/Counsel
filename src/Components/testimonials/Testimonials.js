@@ -6,7 +6,7 @@ import './testimonials.scss';
 
 class Testimonials extends React.Component {
     render() {
-      return <section className="container-fluid mt-5 pb-5 pt-5 testimonials-block">
+      return <section id="testimonials" className="container-fluid mt-5 pb-5 pt-5 testimonials-block">
         <div className="container">
           <Carousel indicators={false} fade={true} interval={5000} controls={false}>
             <Carousel.Item className="d-flex justify-content-center">

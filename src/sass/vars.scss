@@ -6,14 +6,24 @@ $color-text: #333333;
 $font-primary: 'Monserrat', sans-serif;
 $font-secondary: 'Segoe UI Emoji', sans-serif;
 
-$title-slide-size: 3.19rem;
-$font-small: 0.75rem;
+$font-logo-size: 2.82rem;
+$font-title-big-size: 3.19rem;
+$font-small-size: 0.75rem;
 $font-nav-link: 0.88rem;
 $font-section-title: 1.94rem;
 $contact-link-size: 1rem;
 $font-subtitle-size: 1.31rem;
 $font-primary-height: 1.56rem;
 $font-table-value: 3rem;
+
+%opacity-hover-effect {
+  transition-duration: .3s;
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: .3;
+  }
+}
 
 %section-title {
   color: $color-primary;

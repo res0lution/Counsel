@@ -27,8 +27,8 @@ function App() {
         <div className="position-relative pt-5 video-wrapper">
           <InfoWithVideo />
         </div>
-        <Testimonials />
-        <Contact />
+          <Testimonials />
+          <Contact />
       </main>
       <Footer />
     </>

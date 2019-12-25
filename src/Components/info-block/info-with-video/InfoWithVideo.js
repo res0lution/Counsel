@@ -4,7 +4,7 @@ import CounselImg from '../../../images/background.jpg';
 class InfoWithVideo extends React.Component {
   render() {
     return <>
-      <div className="container">
+      <div id="whywebest" className="container">
         <div className=" d-flex pt-5 pb-5">
           <div className="col-6 d-flex position-relative">
             <img className="shadow position-relative info-img" src={CounselImg} width="500" height="325" alt="Counsel"/>

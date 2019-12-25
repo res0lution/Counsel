@@ -7,7 +7,7 @@ import './contact.scss';
 
 class Contact extends React.Component {
   render() {
-    return <section className="container pb-5 pt-5 d-flex flex-column align-items-center">
+    return <section id="contact" className="container pb-5 pt-5 d-flex flex-column align-items-center">
       <h3 className="text-center text-uppercase font-weight-bold mb-4 services-title">Contact With Us</h3>
       <h4 className="text-center text-secondary mb-5 services-subtitle">Rapid solutions to the most complex business challenges with cooperative process-driven.</h4>
       <CardDeck>
@@ -29,7 +29,7 @@ const ContactCard = () => {
   <Card.Img variant="top" src={ServiceImg} width="370" height="240" />
     <Card.Body>
       <Card.Title className="text-uppercase font-weight-bold card-title mb-4">Head quarter</Card.Title>
-      <Card.Text className="card-text">
+      <div className="card-text">
         <div className="d-flex align-items-center mb-3">
           {pin}
           <span className="contact-text">14 Mao Road, N1 4EP, Los Angelos, USA</span>
@@ -42,7 +42,7 @@ const ContactCard = () => {
           {mail}
           <span className="contact-text">counsel@example.mail</span>
         </div>
-      </Card.Text>
+      </div>
     </Card.Body>
   </Card>
 }
