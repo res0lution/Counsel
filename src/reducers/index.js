@@ -1,43 +1,64 @@
 import { combineReducers } from 'redux';
-import {REQUEST_SLIDES, RECEIVE_SLIDES} from '../actions';
+import {REQUEST_SLIDES, RECEIVE_SLIDES, REQUEST_RISKS, RECEIVE_RISKS} from '../actions';
 
-function slides(
+const slides = (
   state = {
     isFetching: false,
-    didInvalidate: false,
-    items: []
+    slides: []
+  },
+  action
+) => {
+  switch (action.type) {
+    case REQUEST_SLIDES:
+      return {...state, isFetching: true,};
+    case RECEIVE_SLIDES:
+      return {...state, isFetching: false, slides: action.slides,};
+    default:
+      return state;
+  };
+};
+
+function risks( 
+  state = {
+    risks : {
+      title: '',
+      subtitle: '',
+      text: '',
+    }
   },
   action
 ) {
   switch (action.type) {
-    case REQUEST_SLIDES:
+    case RECEIVE_RISKS:
       return Object.assign({}, state, {
-        isFetching: true,
-        didInvalidate: false
-      })
-    case RECEIVE_SLIDES:
-      return Object.assign({}, state, {
-        isFetching: false,
-        didInvalidate: false,
-        items: action.slides,
+       risks: action.info,
       })
     default:
-      return state
-  }
+      return state;
+  };
 }
 
-function slidesForSlider(state = {}, action) {
+function stateSlider(state = {}, action) {
   switch (action.type) {
     case RECEIVE_SLIDES:
     case REQUEST_SLIDES:
-      return Object.assign({}, state, {
-        [action.slides]: slides(state[action.slides], action)
-      })
+      return {...state, slides: slides(state[action.slides], action)}
     default:
-      return state
-  }
+      return state;
+  };
+};
+
+function infoAboutRisks(state = {}, action) {
+  switch (action.type) {
+    case RECEIVE_RISKS:
+      return Object.assign({}, state, {
+        risks: risks(state[action.info], action)
+      });
+    default:
+      return state;
+  };
 }
 
-const rootReducer = combineReducers({slidesForSlider});
+const rootReducer = combineReducers({stateSlider, infoAboutRisks: infoAboutRisks});
 
 export default rootReducer;

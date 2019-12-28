@@ -1,7 +1,34 @@
 {
   "slides": [
-    { "id": 1, "title": "Consumer products consulting", "text": "Learn more" },
+    { "id": 1, "title": "Consumer products consulting"},
     { "id": 2, "title": "Put your unused capital to good use", "text": "We devise strategic investment strategies to ensure your surplus cash is working hard." },
     { "id": 3, "title": "Financial planning for your business", "text": "We help businesses to grow and protect profits, attract and reward employees and achieve their financial goals" }
+  ],
+  "risks": [
+    {
+      "title" : "Take away the risk & you can do anything.",
+      "subtitle": "Rapid solutions to the most complex business challenges with cooperative process-driven.",
+      "text": "We work closely with you to establish your attitude to risk and capacity for loss to ensure we construct a tax efficient investment portfolio that will help you to grow your business. This will also help us to determine your attitude to risk. High risk investments can offer a high rate of return over a short period of time whilst lower risk investments are more cautious and therefore can take longer to see results."
+    }   
+  ],
+  "graph": [
+    {
+      "name": "Jan", "profit": 10, "investment": 10, "amt": 2400
+    },
+    {
+      "name": "Feb", "profit": 20, "investment": 27, "amt": 2210
+    },
+    {
+      "name": "Mar", "profit": 30, "investment": 32, "amt": 2290
+    },
+    {
+      "name": "Apr", "profit": 34, "investment": 36, "amt": 2000
+    },
+    {
+      "name": "May", "profit": 44, "investment": 37, "amt": 2181
+    },
+    {
+      "name": "Jun", "profit": 50, "investment": 35, "amt": 2181
+    }
   ]
 }

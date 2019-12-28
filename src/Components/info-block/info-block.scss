@@ -19,20 +19,34 @@
 
 .contact-link {
   @extend %contact-link;
+  @extend %opacity-hover-effect;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-.info-wrapper::after {
-  background: $color-secondary;
-  content: '';
-  height: 543px;
-  position: absolute;
-  right: 21em;
-  top: 0;
-  width: 270px;
-  z-index: 10;
+.info-wrapper {
+  &::after {
+    background: $color-secondary;
+    content: '';
+    height: 553px;
+    position: absolute;
+    right: 21em;
+    top: 0;
+    width: 270px;
+    z-index: 10;
+  }
 }
 
 .info-img {
   z-index: 100;
+}
+
+@media(max-width: 1200px) {
+  .info-wrapper {
+    &::after {
+      display: none;
+    }
+  }
 }
 

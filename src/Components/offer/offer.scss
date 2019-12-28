@@ -14,5 +14,10 @@
   border-color: none;
   background: $color-secondary;
   color: $color-primary;
-  font-size: $contact-link-size;
+  font-size: $font-link-size;
+  &:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    color: white;
+  }
 }

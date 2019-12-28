@@ -11,7 +11,7 @@ $font-title-big-size: 3.19rem;
 $font-small-size: 0.75rem;
 $font-nav-link: 0.88rem;
 $font-section-title: 1.94rem;
-$contact-link-size: 1rem;
+$font-link-size: 1rem;
 $font-subtitle-size: 1.31rem;
 $font-primary-height: 1.56rem;
 $font-table-value: 3rem;
@@ -39,7 +39,7 @@ $font-table-value: 3rem;
 
 %contact-link {
   color: $color-primary;
-  font-size: $contact-link-size;
+  font-size: $font-link-size;
   line-height: $font-primary-height;
   text-decoration: underline;
 }

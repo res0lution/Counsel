@@ -32,7 +32,8 @@ class Header extends React.Component {
   };
 
   render() {
-    const chosenLang = <img className="rounded-circle" src={this.state.lng === 'en' ? EngLang : RusLang} width="22" height="22" alt="English"/>;
+    const chosenLang = <img className="rounded-circle" src={this.state.lng === 'en' ? EngLang : RusLang} 
+      width="22" height="22" alt="English"/>;
 
     return <header className="container-fluid header-wrapper pb-2">
       <div className="container">
@@ -50,11 +51,13 @@ class Header extends React.Component {
               <Nav.Link className="text-white" href="#testimonials">{this.t("Testimonials")}</Nav.Link>
               <Nav.Link className="text-white" href="#contact">{this.t("Contact")}</Nav.Link>
               <NavDropdown className="text-capitalize" menuRole="menu" title={chosenLang} id="basic-nav-dropdown" alignRight>
-                <NavDropdown.Item id="en-lang" className="d-flex align-items-center" onClick={(e) => this.handleClick('en', e)} href="#">
+                <NavDropdown.Item id="en-lang" className="d-flex align-items-center" 
+                  onClick={(e) => this.handleClick('en', e)} href="#">
                   <img className="mr-2" src={EngLang} width="22" height="22" alt="English"/>
                   English
                 </NavDropdown.Item>
-                <NavDropdown.Item id="ru-lang" className="d-flex align-items-center" onClick={(e) => this.handleClick('ru', e)} href="#">
+                <NavDropdown.Item id="ru-lang" className="d-flex align-items-center" 
+                  onClick={(e) => this.handleClick('ru', e)} href="#">
                   <img className="mr-2" src={RusLang} width="22" height="22" alt="Russian"/>
                   Русский
                 </NavDropdown.Item>
@@ -68,11 +71,8 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-  lng: propTypes.string.isRequired,
-}
-
-Header.defaultProps = {
-  lng: 'en',
+  t: propTypes.func.isRequired,
+  i18n: propTypes.object.isRequired,
 }
 
 export default withTranslation()(Header);
