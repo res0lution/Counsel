@@ -16,3 +16,15 @@
 .card-text {
   font-family: $font-secondary;
 }
+
+.img-service {
+  height: 190px;
+  width: 370px;
+}
+
+@media(max-width: 992px) {
+  .img-service {
+    height: auto;
+    width: auto;
+  }
+}

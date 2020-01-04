@@ -7,3 +7,7 @@
 .firm-name {
   color: $color-secondary;
 }
+
+.footer-link {
+  @extend %opacity-hover-effect;
+}

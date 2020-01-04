@@ -67,12 +67,12 @@ class Header extends React.Component {
         </Navbar>
       </div>
     </header>
-  }
-}
+  };
+};
 
 Header.propTypes = {
   t: propTypes.func.isRequired,
   i18n: propTypes.object.isRequired,
-}
+};
 
 export default withTranslation()(Header);

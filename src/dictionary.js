@@ -34,7 +34,50 @@ export default {
       Это то что вы хотите получить и где хотите оказаться во время вашего путешествия. 
       Наша же работа помочь вам преодолеть ваш путь.`,
       "Looking for a First-Class Business Plan Consultant?":"Ищете Превоклассного Бизнес Консультанта?",
-      "Contact now": "Связаться сейчас"
+      "Contact now": "Связаться сейчас",
+      "Popular services": "популярные сервисы",
+      "Our services can help you to solve all your business problems": "Наши услуги помогут решить вам все ваши бизнес проблемы",
+      "Financial planning":"Финансовое планирование",
+      "Effective financial planning will protect you now, and in the future, and prepare you for whatever lies ahead. We take time to thoroughly understand your short, medium and long term goals and will develop a financial plan to help you to achieve these.":
+      "Эффективное финансовое планирование будет защищать вас сейчас и в будущем и подготовит к любым событиям. Мы выясним ваши цели на текущем и будущем этапах и разработаем финасовый план для их достижения.",
+      "Corporate investment advice": "Корпоративный инвестиционный совет",
+      "Corporate investment enables your company to utilise unused capital to your businesses best advantage. Whether you want to develop a new corporate investment strategy or review your existing portfolio, we can develop a bespoke corporate investment plan for your business to support your long term financial goals.":
+      "Корпоративное инвестирование заставит вашу команию исрользовать свободный капитал для улучшения вашего бизнеса. Неважно хотите ли вы разработать новую стратегию инвестирования или пересмотреть ваше текущие портфолио, мы можем разработать сделанный на заказ корпоративный инвестиционный план для вашего бизнеса на долгосрочный период.",
+      "Business protecting": "Защита бизнеса",
+      "There is always an element of uncertainty in running a business premises can be rebuilt, contents can be replaced, but the recovery of a key individual is not nearly as certain. Having the right business protection policies in place helps to ensure your company can survive the loss of a key individual.":
+      "В бизнесе всегда есть элемент случайности: предпосылки могут измениться, содержание переместиться, но востоновление ключевой индивидуальности не всегда точно. Обладая правильно организованной политикой защиты бизнеса может помочь обеспечить ваше компании страховку от потери индивидуальности.",
+      "coffee cups": "чашек кофе",
+      "subscribers": "подписчиков",
+      "customers": "покупателей",
+      "purchases": "покупок",
+      "Why we best Consulting office in portland ?": "Почему мы лучшая инвестиционная компания в портланде",
+      "The Counsel Company is an innovative consulting advisory firm": "Counsel это инновационная фирма конмультант",
+      "CC was the first wealth management firm in Portland to introduce the fiduciary standard in serving clients. Our comprehensive approach, built on decades of experience and expertise, goes far beyond standard investment guidance. CC is honored and respected nationally. Our excellence has been recognized by Forbes and Wall Street, who have ranked CC the #1 Wealth Management Firm in Portland year after year.":
+      "Мы первая инвестиционная фирма в Порланде. Наш тщательный подход организованый десятилетиями опыта и экспертиз вышел далеко за пределы стандартов инвестиционного консультирования. Мы национальная гордость Портланда. Наш успех был признан Forbes и Wall Street, которые оценивают нас как лучшую инвестиционную фирму в порталнде год за годом.",
+      "our services": "наши услуги",
+      "I had a problem with my account verification. Nicholas ** was very helpful and patient with me. He went out of his way to provide a step by step walkthrough of how to access my account. Issue was fixed. =)":
+      "У меня была проблема с моим аккаунтом. Николас был очень вежлив. Он смог провести меня шаг за шагом через верификацию. Проблема была решена. =)",
+      "I've been with Counsel for over 25 years, and have been extremely good to me. In questions, recommendations, and lately, a banking issue. I had a few of my accounts linked to my bank and even though it took a while, the resolution center/group added my other accounts to my bank so I could do transactions. Great company.":
+      "Я с Counsel уже 25 лет и они были нереально хороши. В вопросах, рекомендациях, и в банковских вопросах. У меня несколько аккаунтов связанных с банком и хотя у других это занимает порядочно времени я могу проводить транкзации на каждый из них. Хорошая компания.",
+      "Very professional and always willing to answer questions about how they invest your money. They give you wise advice on which way to get the most for the money invested. One of the best retirement investors.":
+      "Очень проффесиональный подход и всегда отвечают на вопросы об инвестициях. Они дают мудрые советы как лучше инвестировать. Одит из лучших инвесторов.",
+      "Head quarter": "Главный офис",
+      "And we`ll solve all your financial problems": "И мы решим все ваши финансовые проблемы",
+      "Contact With Us": "Свяжитесь с нами",
+      "Fill this form and our manager will ask on all your questions": "Заполните эту форму и наш менеджер ответит на все ваши вопросы",
+      "Submit form": "Отправить форму",
+      "Second name": "Фамилия",
+      "First name": "Имя",
+      "Looks good!": "Отлично!",
+      "Phone number": "Номер телефона",
+      "Your second name": "Ваша фамилия",
+      "Your first name": "Ваше имя",
+      'Must be 2 characters or more': "Не меньше 2 букв",
+      'Must be 15 characters or less': "Не больше 15 букв",
+      'Required field': "Обязательное поле",
+      'Must be 20 characters or less': "Не больше 20 букв",
+      'Invalid email address': "Неверный адресс",
+      'Invalid format': "Неверный формат"
     },
   },
 };

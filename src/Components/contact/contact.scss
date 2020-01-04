@@ -8,3 +8,15 @@
 .contact-text {
   color: $color-primary;
 }
+
+@media(max-width: 992px) {
+  .contact-text {
+    width: 100px;
+  }
+}
+
+@media(max-width: 568px) {
+  .contact-text {
+    width: auto;
+  }
+}

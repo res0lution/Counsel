@@ -5,7 +5,7 @@
 }
 
 .table-value-row {
-  font-size: $font-table-value;
+  font-size: $font-table-value-size;
   letter-spacing: .55rem;
 }
 
@@ -13,4 +13,16 @@
   font-family: $font-secondary;
   font-size: $font-nav-link;
   letter-spacing: .2rem;
+}
+
+@media(max-width: 762px) {
+  .table-value-row {
+    font-size: $font-subtitle-size;
+    letter-spacing: .35rem;
+  }
+  
+  .table-name-row {
+    font-size: $font-small-size;
+    letter-spacing: .1rem;
+  }
 }

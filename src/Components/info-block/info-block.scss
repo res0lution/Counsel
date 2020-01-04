@@ -25,25 +25,29 @@
   }
 }
 
-.info-wrapper {
+.img-wrapper {
   &::after {
-    background: $color-secondary;
-    content: '';
-    height: 553px;
-    position: absolute;
-    right: 21em;
-    top: 0;
-    width: 270px;
-    z-index: 10;
+    @extend %decor-div;
+    height: 550px;
+    right: 150px;
   }
 }
 
 .info-img {
-  z-index: 100;
+  z-index: 10;
+}
+
+.video-wrapper {
+  &::after {
+    @extend %decor-div;
+    height: 545px;
+    left: 170px;
+  }
 }
 
 @media(max-width: 1200px) {
-  .info-wrapper {
+  .img-wrapper,
+  .video-wrapper {
     &::after {
       display: none;
     }

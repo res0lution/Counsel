@@ -14,14 +14,3 @@ body {
 .main-content {
   z-index: 1000;
 }
-
-.video-wrapper::after {
-  background: $color-secondary;
-  content: '';
-  height: 543px;
-  position: absolute;
-  left: 21em;
-  top: 0;
-  width: 270px;
-  z-index: 10;
-}

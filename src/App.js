@@ -9,6 +9,7 @@ import InfoWithVideo from './Components/info-block/info-with-video/InfoWithVideo
 import Testimonials from './Components/testimonials/Testimonials.js';
 import Contact from './Components/contact/Contact.js';
 import Footer from './Components/footer/Footer.js';
+import ModalForm from './Components/modal/Modal.js';
 import './sass/main.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,12 +20,13 @@ function App() {
         <Header />
         <Slider />
       </div>
+      <ModalForm />
       <main className="position-relative main-content">
         <InfoBlock />
         <Offer />
         <Services />
         <Statistics />
-        <div className="position-relative pt-5 video-wrapper">
+        <div className="position-relative pt-5">
           <InfoWithVideo />
         </div>
           <Testimonials />

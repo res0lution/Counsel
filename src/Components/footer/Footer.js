@@ -8,10 +8,10 @@ const Footer = () => {
     <div className="container d-flex align-items-center justify-content-between pb-2 pt-4">
       <p className="text-white">Copyright © <span className="firm-name">Symu.co</span></p>
       <ul className="list-unstyled d-flex">
-        <li><a href="3"><FontAwesomeIcon className="text-white ml-3" icon={faFacebook}/></a></li>
-        <li><a href="3"><FontAwesomeIcon className="text-white ml-3" icon={faYoutube}/></a></li>
-        <li><a href="3"><FontAwesomeIcon className="text-white ml-3" icon={faGooglePlus}/></a></li>
-        <li><a href="3"><FontAwesomeIcon className="text-white ml-3" icon={faInstagram}/></a></li>
+        <li><a href="3" className="footer-link"><FontAwesomeIcon className="text-white ml-3" icon={faFacebook}/></a></li>
+        <li><a href="3" className="footer-link"><FontAwesomeIcon className="text-white ml-3" icon={faYoutube}/></a></li>
+        <li><a href="3" className="footer-link"><FontAwesomeIcon className="text-white ml-3" icon={faGooglePlus}/></a></li>
+        <li><a href="3" className="footer-link"><FontAwesomeIcon className="text-white ml-3" icon={faInstagram}/></a></li>
       </ul>
     </div>
   </footer>

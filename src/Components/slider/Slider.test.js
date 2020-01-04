@@ -2,6 +2,26 @@ import React from "react";
 import { unmountComponentAtNode, render } from "react-dom";
 import { act } from "react-dom/test-utils";
 import Slider from './Slider.js';
+import { createStore, applyMiddleware, compose } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import reducer from '../../reducers';
+import '../../i18n.js';
+
+const middleware = [ thunk ];
+
+const composeEnhancers =
+  typeof window === 'object' &&
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+    }) : compose;
+
+const enhancer = composeEnhancers(
+  applyMiddleware(...middleware),
+);
+
+const store = createStore(reducer, enhancer);
+
 
 let container = null;
 beforeEach(() => {
@@ -19,10 +39,13 @@ afterEach(() => {
 
 it("Render slider component", () => {
     act(() => {
-      render(<Slider/>, container);
+      render(
+        <Provider store={store}>
+          <Slider/>
+        </Provider>, container);
     });
   
-    const h2 = document.querySelector("first-slide-title");
-    expect(h2.textContent).toBe('');
+    const link = document.querySelector('.first-slide-title');
+    expect(link).not.toBe();
   
   });

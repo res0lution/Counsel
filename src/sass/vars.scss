@@ -14,7 +14,7 @@ $font-section-title: 1.94rem;
 $font-link-size: 1rem;
 $font-subtitle-size: 1.31rem;
 $font-primary-height: 1.56rem;
-$font-table-value: 3rem;
+$font-table-value-size: 3rem;
 
 %opacity-hover-effect {
   transition-duration: .3s;
@@ -42,4 +42,12 @@ $font-table-value: 3rem;
   font-size: $font-link-size;
   line-height: $font-primary-height;
   text-decoration: underline;
+}
+
+%decor-div {
+  background: $color-secondary;
+  content: '';
+  position: absolute;
+  top: -96px;
+  width: 270px;
 }

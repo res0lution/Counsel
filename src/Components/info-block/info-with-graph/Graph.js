@@ -1,35 +1,23 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, } from 'recharts';
-
-const data = [
-  {
-    name: 'Jan', profit: 10, investment: 10, amt: 2400,
-  },
-  {
-    name: 'Feb', profit: 20, investment: 27, amt: 2210,
-  },
-  {
-    name: 'Mar', profit: 30, investment: 32, amt: 2290,
-  },
-  {
-    name: 'Apr', profit: 34, investment: 36, amt: 2000,
-  },
-  {
-    name: 'May', profit: 44, investment: 37, amt: 2181,
-  },
-  {
-    name: 'Jun', profit: 50, investment: 35, amt: 2181,
-  }
-];
+import { connect } from 'react-redux';
+import { fetchDataForGraph } from '../../../actions/graph.js';
+import propTypes from 'prop-types';
 
 class Graph extends React.Component {
+
+  componentDidMount() {
+    const {dispatch, data} = this.props;
+    dispatch(fetchDataForGraph(data));
+  };
+
   render() {
     return <div>
-      <LineChart
+    <LineChart
         width={500}
         height={500}
-        data={data}
-      >
+        data={this.props.data}
+    >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
@@ -39,7 +27,28 @@ class Graph extends React.Component {
       <Line type="monotone" dataKey="investment" stroke="#fde428" />
     </LineChart>
     </div>
-  }
-}
+  };
+};
 
-export default Graph;
+const mapStateToProps = (state) => {
+  const {dataForGraph} = state;
+  const {dataGraph} = dataForGraph;
+  const {isFetching, items: data} = dataGraph || {isFetching: true, items: []};
+  return {
+    data,
+    isFetching
+  };
+};
+
+Graph.propTypes = {
+  data: propTypes.array.isRequired,
+  isFetching: propTypes.bool.isRequired,
+  dispatch: propTypes.func.isRequired
+};
+
+Graph.defaultProps = {
+  data: [],
+  isFetching: true
+};
+
+export default connect(mapStateToProps)(Graph);
