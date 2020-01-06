@@ -1,9 +1,28 @@
 # [Counsel](#) 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Introduction
 
-Counsel is a my pet project landing page, created for companies that provide business and investment advice.
+Counsel is a my pet project responsive landing page, created for companies that provide business and investment advice.
+
+**Browsers** list
+
+Google Chrome, Opera, Microsoft Edge, Firefox
+
+## Quick Overview
+
+Download this repo and open console in directory
+
+```sh
+npm install
+npm start
+```
+
+and [**json-server**](https://github.com/typicode/json-server) for mock-backend
+
+```sh
+json-server --watch db.json --port 3001
+```
 
 ## Technical Sheet
 

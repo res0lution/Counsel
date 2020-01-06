@@ -1,0 +1,145 @@
+@import '../../sass/vars';
+
+.slider-block {
+  background: $color-primary-rgba;
+  top: 111px;
+}
+
+.carousel-item {
+  min-height: 790px;
+}
+
+.slide-content,
+.slide-content-second {
+  bottom: 170px;
+}
+
+.slide-title {
+  font-size: $font-title-big-size;
+  line-height: $font-title-big-size;
+  margin-bottom: .85em;
+}
+
+.caption-second {
+  margin-left: 7em;
+}
+
+.slide-text {
+  color: $color-secondary;
+}
+
+.slide-link {
+  color: $color-secondary;
+  font-family: $font-primary;
+  font-size: $font-subtitle-size;
+  text-decoration: underline;
+  @extend %opacity-hover-effect;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.first-slide-content {
+  bottom: 230px;
+}
+
+.first-slide-title {
+  &::after {
+    background: url('../../images/square.png') no-repeat center center;
+    content: '';
+    height: 380px;
+    left: 3.15em;
+    position: absolute;
+    top: -1.5em;
+    width: 300px;
+  }
+}
+
+.carousel-control-next {
+  left: 10em;
+}
+
+#next,
+#prev {
+  color: $color-secondary;
+}
+
+.carousel-control-next {
+  &::before {
+    left: 3.2em;
+    content: 'next';
+    color: $color-secondary;
+    font-size: $font-small-size;
+    position: absolute;
+    text-transform: uppercase;
+  }
+}
+
+.carousel-control-prev {
+  &::after {
+    right: 1em;
+    content: 'previous';
+    color: $color-secondary;
+    font-size: $font-small-size;
+    position: absolute;
+    text-transform: uppercase;
+  }
+}
+
+@media(max-width: 1200px) {
+  .first-slide-content {
+    right: 200px;
+  }
+}
+
+@media(max-width:992px) {
+  .slider-block {
+    top: 0;
+  }
+
+  .first-slide-content {
+    right: 0;
+  }
+
+  .first-slide-title {
+    &::after {
+      display: none;
+    }
+  }
+
+  .slide-text {
+    text-align: right;
+  }
+
+  .caption-second {
+    margin-left: 8em;
+  }
+
+  #next,
+  #prev {
+    color: transparent;
+  }
+}
+
+@media(max-width:1200px) {
+  .carousel-control-next {
+    &::before {
+      display: none;
+    }
+  }
+  
+  .carousel-control-prev {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media(max-width:576px) {
+  .caption-second {
+    margin-left: 0;
+  }
+}
+
+@import '../../sass/animation-1.scss';
+@import '../../sass/animation-2.scss';

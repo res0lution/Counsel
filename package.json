@@ -1,6 +1,6 @@
 {
   "name": "counsel",
-  "version": "0.6.0",
+  "version": "1.1.6",
   "description": "Counsel is a my pet project landing page, created for companies that provide business and investment advice.",
   "private": true,
   "dependencies": {

@@ -1,0 +1,47 @@
+@import '../../sass/vars';
+
+.services-title {
+  @extend %section-title;
+}
+
+.services-subtitle {
+  @extend %section-subtitle;
+  width: 500px;
+}
+
+.card-title {
+  color: $color-primary;
+}
+
+.card-text {
+  font-family: $font-secondary;
+}
+
+.img-service {
+  height: auto;
+  width: 100%;
+}
+
+@media(min-width: 572px) {
+  .img-service {
+    height: auto;
+  }
+}
+
+@media(min-width: 768px) {
+  .img-service {
+    height: auto;
+  }
+}
+
+@media(min-width: 992px) {
+  .img-service {
+    height: 170px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .img-service {
+    height: 190px;
+  }
+}

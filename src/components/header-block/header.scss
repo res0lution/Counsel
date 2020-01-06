@@ -1,0 +1,46 @@
+@import '../../sass/vars';
+
+.header-wrapper {
+  background: $color-primary-rgba;
+  position: fixed;
+  z-index: 10000;
+}
+
+.header-block {
+  z-index: 10000;
+}
+
+.text-second-theme {
+  color: $color-secondary;
+}
+
+.header-logo {
+  @extend %opacity-hover-effect;
+}
+
+.text-logo {
+  font-size: $font-logo-size;
+}
+
+.text-logo-small {
+  font-family: $font-primary;
+  font-size: $font-small-size;
+  letter-spacing: .25rem;
+}
+
+.nav-link {
+  font-family: $font-primary;
+  font-size: $font-nav-link;
+  line-height: $font-title-big-size;;
+  @extend %opacity-hover-effect;
+}
+
+.dropdown-toggle::after {
+  color: white;
+}
+
+@media(max-width:992px) {
+  .header-wrapper {
+    position: relative;
+  }
+}

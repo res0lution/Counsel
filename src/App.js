@@ -1,15 +1,15 @@
 import React from 'react';
-import Header from './Components/header/Header.js';
-import Slider from './Components/slider/Slider.js';
-import InfoBlock from './Components/info-block/InfoBlock.js';
-import Offer from './Components/offer/Offer.js';
-import Services from './Components/services/Services.js';
-import Statistics from './Components/statistics/Statistics.js';
-import InfoWithVideo from './Components/info-block/info-with-video/InfoWithVideo.js';
-import Testimonials from './Components/testimonials/Testimonials.js';
-import Contact from './Components/contact/Contact.js';
-import Footer from './Components/footer/Footer.js';
-import ModalForm from './Components/modal/Modal.js';
+import Header from './components/header-block/Header.js';
+import Slider from './containers/slider-block/Slider.js';
+import InfoBlock from './components/info-block/InfoBlock.js';
+import Offer from './containers/offer-block/Offer.js';
+import Services from './containers/services-block/Services.js';
+import Statistics from './containers/statistics-block/Statistics.js';
+import InfoWithVideo from './containers/info-with-video/InfoWithVideo.js';
+import Testimonials from './containers/testimonials-block/Testimonials.js';
+import Contact from './containers/contact-block/Contact.js';
+import Footer from './components/footer-block/Footer.js';
+import ModalForm from './containers/modal-block/Modal.js';
 import './sass/main.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

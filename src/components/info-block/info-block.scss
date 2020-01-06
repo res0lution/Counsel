@@ -1,0 +1,56 @@
+@import '../../sass/vars';
+
+.info-block {
+  background: white;
+}
+
+.info-title {
+  @extend %section-title;
+  width: 100%;
+}
+
+.info-subtitle {
+  @extend %section-subtitle;
+}
+
+.info-text {
+  color: $color-text;
+}
+
+.contact-link {
+  @extend %contact-link;
+  @extend %opacity-hover-effect;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.img-wrapper {
+  &::after {
+    @extend %decor-div;
+    height: 550px;
+    right: 150px;
+  }
+}
+
+.info-img {
+  z-index: 10;
+}
+
+.video-wrapper {
+  &::after {
+    @extend %decor-div;
+    height: 545px;
+    left: 170px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .img-wrapper,
+  .video-wrapper {
+    &::after {
+      display: none;
+    }
+  }
+}
+
